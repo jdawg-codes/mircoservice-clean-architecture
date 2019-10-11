@@ -13,8 +13,9 @@ public class FakeGateway implements Gateway {
 	}
 
 	@Override
-	public GatewayResponse execute(GatewayRequest request) {
-		return new FakeGatewayResponse();
+	public GatewayResponse execute(GatewayConnection gatewayConnection, GatewayRequest request) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

@@ -5,7 +5,8 @@ import microservice.clean.architecture.boundary.TaskResponse;
 import microservice.clean.architecture.gateway.GatewayResponse;
 
 public class FakePresenter implements OutputBoundary {
-
+	GatewayResponse response;
+	
 	@Override
 	public TaskResponse present() {
 		TaskResponse presenter = new FakeTaskResponse();		
@@ -14,8 +15,7 @@ public class FakePresenter implements OutputBoundary {
 
 	@Override
 	public void setResponse(GatewayResponse response) {
-		// TODO Auto-generated method stub
-		
+		this.response = response;
 	}
 	
 }

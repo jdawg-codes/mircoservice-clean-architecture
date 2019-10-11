@@ -1,9 +1,9 @@
 package microservice.clean.architecture.exception;
 
-public class MissingConcreteClassException extends Exception {
+public class ModuleMissingConcreteClassException extends Exception {
 	private Class<?> interfaceClass;
 	
-	public MissingConcreteClassException(Class<?> interfaceClass) {
+	public ModuleMissingConcreteClassException(Class<?> interfaceClass) {
 		this.interfaceClass = interfaceClass;
 	}
 

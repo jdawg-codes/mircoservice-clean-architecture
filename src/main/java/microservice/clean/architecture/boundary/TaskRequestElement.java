@@ -1,5 +1,6 @@
 package microservice.clean.architecture.boundary;
 
-public abstract class TaskRequestElement {
-
+public interface TaskRequestElement<T> {
+	public T get();
+	public void set(T element);
 }

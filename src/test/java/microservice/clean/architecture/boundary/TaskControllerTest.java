@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import microservice.clean.architecture.exception.MissingConcreteClassException;
+import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 import microservice.clean.architecture.fake.FakeTask;
 import microservice.clean.architecture.module.DefaultModule;
 import microservice.clean.architecture.task.Task;
@@ -19,28 +19,25 @@ public class TaskControllerTest {
 			module.bind(Task.class, null);
 						
 			TaskController controller = new TaskController(module);
+			fail("The NoTaskException was not thrown when it should have been");
 		} catch(Exception e) {
-			Exception expectedException = new MissingConcreteClassException(Task.class);
-			
-			System.out.println(e.getMessage() + " = " + expectedException.getMessage());
+			Exception expectedException = new ModuleMissingConcreteClassException(Task.class);
 			
 			//TODO: Change to assert equals statement
-			if(!e.getMessage().equals(expectedException.getMessage())) {
-				fail("The NoTaskException was not thrown when it should have been");
-			}			
+			assertEquals(e.getMessage(),expectedException.getMessage());
 		}		
 	}
 	
 	@Test
-	public void canInstantiateControllerWithTaskAndRequestModel() {
+	public void canInstantiateControllerWithModule() {
 		try {
 			//set up module with fake task
 			DefaultModule module = new DefaultModule();
 			module.bind(Task.class, FakeTask.class);
 			
 			TaskController controller = new TaskController(module);
+			OutputBoundary presenter = controller.execute();
 		} catch(Exception e) {
-			//TODO: Add some form of assert statement
 			//This test could fail for several reasons. Not clear why it fails.
 			fail("Could not instantiate controller because of missing request");
 		}		
