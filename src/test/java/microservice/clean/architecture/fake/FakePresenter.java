@@ -1,8 +1,8 @@
 package microservice.clean.architecture.fake;
 
-import microservice.clean.architecture.boundary.OutputBoundary;
-import microservice.clean.architecture.boundary.TaskResponse;
-import microservice.clean.architecture.gateway.GatewayResponse;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.TaskResponse;
+import microservice.clean.architecture.service.gateway.GatewayResponse;
 
 public class FakePresenter implements OutputBoundary {
 	GatewayResponse response;

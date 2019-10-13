@@ -1,6 +1,6 @@
 package microservice.clean.architecture.exception;
 
-import microservice.clean.architecture.entity.attribute.Attribute;
+import microservice.clean.architecture.service.entity.attribute.Attribute;
 
 public class AttributeValidationException extends Exception {
 	private Attribute<?> attribute;

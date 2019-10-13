@@ -1,9 +1,9 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary;
 
 import microservice.clean.architecture.exception.NoTaskRequestException;
-import microservice.clean.architecture.module.Module;
+import microservice.clean.architecture.service.module.Module;
+import microservice.clean.architecture.service.task.Task;
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
-import microservice.clean.architecture.task.Task;
 
 public class TaskController {
 	private Module module;

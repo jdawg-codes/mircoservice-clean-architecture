@@ -1,4 +1,4 @@
-package microservice.clean.architecture.module;
+package microservice.clean.architecture.service.module;
 
 import microservice.clean.architecture.exception.ModuleAbstractConcreteClassException;
 import microservice.clean.architecture.exception.ModuleBindingMismatchException;

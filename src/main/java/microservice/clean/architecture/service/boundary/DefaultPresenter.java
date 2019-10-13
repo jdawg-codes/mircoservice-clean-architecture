@@ -1,6 +1,6 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary;
 
-import microservice.clean.architecture.gateway.GatewayResponse;
+import microservice.clean.architecture.service.gateway.GatewayResponse;
 
 public class DefaultPresenter implements OutputBoundary {
 	GatewayResponse gatewayResponse;

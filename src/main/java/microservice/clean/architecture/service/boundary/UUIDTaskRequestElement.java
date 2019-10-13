@@ -1,4 +1,4 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary;
 
 import java.util.UUID;
 

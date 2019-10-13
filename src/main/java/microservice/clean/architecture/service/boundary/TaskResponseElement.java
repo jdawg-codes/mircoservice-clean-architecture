@@ -1,4 +1,4 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary;
 
 public class TaskResponseElement<T> {
 	private TaskResponseElement<T> taskElement;

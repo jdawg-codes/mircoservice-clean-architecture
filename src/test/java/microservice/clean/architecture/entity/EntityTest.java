@@ -6,11 +6,12 @@ import java.math.BigDecimal;
 
 import org.junit.Test;
 
-import microservice.clean.architecture.entity.attribute.MoneyAttribute;
-import microservice.clean.architecture.entity.attribute.PhoneAttribute;
-import microservice.clean.architecture.entity.attribute.StringAttribute;
 import microservice.clean.architecture.fake.FakeConfiguredEntity;
 import microservice.clean.architecture.fake.FakeEntity;
+import microservice.clean.architecture.service.entity.Entity;
+import microservice.clean.architecture.service.entity.attribute.MoneyAttribute;
+import microservice.clean.architecture.service.entity.attribute.PhoneAttribute;
+import microservice.clean.architecture.service.entity.attribute.StringAttribute;
 
 public class EntityTest {
 

@@ -1,9 +1,9 @@
 package microservice.clean.architecture.fake;
 
-import microservice.clean.architecture.gateway.Gateway;
-import microservice.clean.architecture.gateway.GatewayConnection;
-import microservice.clean.architecture.gateway.GatewayRequest;
-import microservice.clean.architecture.gateway.GatewayResponse;
+import microservice.clean.architecture.service.gateway.Gateway;
+import microservice.clean.architecture.service.gateway.GatewayConnection;
+import microservice.clean.architecture.service.gateway.GatewayRequest;
+import microservice.clean.architecture.service.gateway.GatewayResponse;
 
 public class FakeGateway implements Gateway {
 

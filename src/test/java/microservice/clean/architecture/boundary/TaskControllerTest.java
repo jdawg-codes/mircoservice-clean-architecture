@@ -6,8 +6,10 @@ import org.junit.Test;
 
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 import microservice.clean.architecture.fake.FakeTask;
-import microservice.clean.architecture.module.DefaultModule;
-import microservice.clean.architecture.task.Task;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.TaskController;
+import microservice.clean.architecture.service.module.DefaultModule;
+import microservice.clean.architecture.service.task.Task;
 
 public class TaskControllerTest {
 

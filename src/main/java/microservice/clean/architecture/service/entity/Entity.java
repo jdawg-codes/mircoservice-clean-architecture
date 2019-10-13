@@ -1,11 +1,11 @@
-package microservice.clean.architecture.entity;
+package microservice.clean.architecture.service.entity;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import microservice.clean.architecture.entity.attribute.Attribute;
-import microservice.clean.architecture.entity.attribute.validator.ValidationErrors;
-import microservice.clean.architecture.gateway.GatewayRequest;
+import microservice.clean.architecture.service.entity.attribute.Attribute;
+import microservice.clean.architecture.service.entity.attribute.validator.ValidationErrors;
+import microservice.clean.architecture.service.gateway.GatewayRequest;
 
 public abstract class Entity {
 	protected String entityName;

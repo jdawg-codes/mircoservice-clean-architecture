@@ -1,13 +1,13 @@
-package microservice.clean.architecture.task;
+package microservice.clean.architecture.service.task;
 
-import microservice.clean.architecture.boundary.OutputBoundary;
-import microservice.clean.architecture.entity.Entity;
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
-import microservice.clean.architecture.gateway.Gateway;
-import microservice.clean.architecture.gateway.GatewayConnection;
-import microservice.clean.architecture.gateway.GatewayRequest;
-import microservice.clean.architecture.gateway.GatewayResponse;
-import microservice.clean.architecture.module.Module;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.entity.Entity;
+import microservice.clean.architecture.service.gateway.Gateway;
+import microservice.clean.architecture.service.gateway.GatewayConnection;
+import microservice.clean.architecture.service.gateway.GatewayRequest;
+import microservice.clean.architecture.service.gateway.GatewayResponse;
+import microservice.clean.architecture.service.module.Module;
 
 public class EntityInsertTask implements Task {
 	private Entity entity;

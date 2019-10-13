@@ -6,7 +6,9 @@ import org.junit.Test;
 
 import microservice.clean.architecture.fake.FakeGatewayResponse;
 import microservice.clean.architecture.fake.FakePresenter;
-import microservice.clean.architecture.gateway.GatewayResponse;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.TaskResponse;
+import microservice.clean.architecture.service.gateway.GatewayResponse;
 
 public class PresenterTest {
 
