@@ -1,4 +1,4 @@
-package microservice.clean.architecture.module;
+package microservice.clean.architecture.service.module;
 
 import java.util.HashMap;
 import java.util.Map;

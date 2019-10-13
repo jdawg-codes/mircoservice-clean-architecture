@@ -1,4 +1,4 @@
-package microservice.clean.architecture.entity.attribute;
+package microservice.clean.architecture.service.entity.attribute;
 
 import java.math.BigDecimal;
 import java.util.Currency;

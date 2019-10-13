@@ -1,4 +1,4 @@
-package microservice.clean.architecture.gateway;
+package microservice.clean.architecture.service.gateway;
 
 public interface Gateway {	
 	public GatewayConnection connect();	

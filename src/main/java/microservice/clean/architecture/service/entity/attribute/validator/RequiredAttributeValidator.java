@@ -1,6 +1,6 @@
-package microservice.clean.architecture.entity.attribute.validator;
+package microservice.clean.architecture.service.entity.attribute.validator;
 
-import microservice.clean.architecture.entity.attribute.Attribute;
+import microservice.clean.architecture.service.entity.attribute.Attribute;
 
 public class RequiredAttributeValidator implements AttributeValidator {
 

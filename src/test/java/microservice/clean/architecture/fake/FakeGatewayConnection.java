@@ -1,6 +1,6 @@
 package microservice.clean.architecture.fake;
 
-import microservice.clean.architecture.gateway.GatewayConnection;
+import microservice.clean.architecture.service.gateway.GatewayConnection;
 
 public class FakeGatewayConnection implements GatewayConnection {
 

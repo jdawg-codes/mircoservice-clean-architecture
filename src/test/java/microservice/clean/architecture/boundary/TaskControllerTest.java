@@ -6,8 +6,10 @@ import org.junit.Test;
 
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 import microservice.clean.architecture.fake.FakeTask;
-import microservice.clean.architecture.module.DefaultModule;
-import microservice.clean.architecture.task.Task;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.TaskManager;
+import microservice.clean.architecture.service.module.DefaultModule;
+import microservice.clean.architecture.service.task.Task;
 
 public class TaskControllerTest {
 
@@ -18,7 +20,7 @@ public class TaskControllerTest {
 			DefaultModule module = new DefaultModule();
 			module.bind(Task.class, null);
 						
-			TaskController controller = new TaskController(module);
+			TaskManager controller = new TaskManager(module);
 			fail("The NoTaskException was not thrown when it should have been");
 		} catch(Exception e) {
 			Exception expectedException = new ModuleMissingConcreteClassException(Task.class);
@@ -35,7 +37,7 @@ public class TaskControllerTest {
 			DefaultModule module = new DefaultModule();
 			module.bind(Task.class, FakeTask.class);
 			
-			TaskController controller = new TaskController(module);
+			TaskManager controller = new TaskManager(module);
 			OutputBoundary presenter = controller.execute();
 		} catch(Exception e) {
 			//This test could fail for several reasons. Not clear why it fails.
@@ -50,7 +52,7 @@ public class TaskControllerTest {
 			DefaultModule module = new DefaultModule();
 			module.bind(Task.class, FakeTask.class);
 			
-			TaskController controller = new TaskController(module);
+			TaskManager controller = new TaskManager(module);
 			OutputBoundary presenter = controller.execute();
 		} catch(Exception e) {
 			//TODO: Add some form of assert statement

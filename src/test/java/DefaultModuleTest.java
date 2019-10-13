@@ -2,13 +2,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import microservice.clean.architecture.entity.Entity;
 import microservice.clean.architecture.exception.ModuleAbstractConcreteClassException;
 import microservice.clean.architecture.exception.ModuleBindingMismatchException;
 import microservice.clean.architecture.fake.FakeEntity;
 import microservice.clean.architecture.fake.FakeGateway;
-import microservice.clean.architecture.module.DefaultModule;
-import microservice.clean.architecture.module.Module;
+import microservice.clean.architecture.service.entity.Entity;
+import microservice.clean.architecture.service.module.DefaultModule;
+import microservice.clean.architecture.service.module.Module;
 
 public class DefaultModuleTest {
 

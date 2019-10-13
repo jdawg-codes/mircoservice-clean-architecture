@@ -4,16 +4,19 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import microservice.clean.architecture.boundary.OutputBoundary;
-import microservice.clean.architecture.entity.Entity;
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 import microservice.clean.architecture.fake.FakeEntity;
 import microservice.clean.architecture.fake.FakeGateway;
-import microservice.clean.architecture.fake.FakeGatewayRequest;
 import microservice.clean.architecture.fake.FakePresenter;
-import microservice.clean.architecture.gateway.Gateway;
-import microservice.clean.architecture.gateway.GatewayRequest;
-import microservice.clean.architecture.module.DefaultModule;
+import microservice.clean.architecture.fake.FakeTaskRequest;
+import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.TaskRequest;
+import microservice.clean.architecture.service.entity.Entity;
+import microservice.clean.architecture.service.gateway.Gateway;
+import microservice.clean.architecture.service.gateway.GatewayRequest;
+import microservice.clean.architecture.service.module.DefaultModule;
+import microservice.clean.architecture.service.task.EntityInsertTask;
+import microservice.clean.architecture.service.task.Task;
 
 public class EntityInsertTaskTest {
 	@Test
@@ -22,7 +25,7 @@ public class EntityInsertTaskTest {
 			//set up module with fake task
 			DefaultModule module = new DefaultModule();
 			module.bind(Entity.class, FakeEntity.class);
-			module.bind(GatewayRequest.class, FakeGatewayRequest.class);
+			module.bind(TaskRequest.class, FakeTaskRequest.class);
 			module.bind(Gateway.class, FakeGateway.class);
 			module.bind(OutputBoundary.class, FakePresenter.class);
 			
@@ -41,7 +44,7 @@ public class EntityInsertTaskTest {
 			//set up module with fake task
 			DefaultModule module = new DefaultModule();
 			module.bind(Entity.class, null);
-			module.bind(GatewayRequest.class, FakeGatewayRequest.class);
+			module.bind(TaskRequest.class, FakeTaskRequest.class);
 			module.bind(Gateway.class, FakeGateway.class);
 			module.bind(OutputBoundary.class, FakePresenter.class);
 			
@@ -83,7 +86,7 @@ public class EntityInsertTaskTest {
 			//set up module with fake task
 			DefaultModule module = new DefaultModule();
 			module.bind(Entity.class, FakeEntity.class);
-			module.bind(GatewayRequest.class, FakeGatewayRequest.class);
+			module.bind(TaskRequest.class, FakeTaskRequest.class);
 			module.bind(Gateway.class, null);
 			module.bind(OutputBoundary.class, FakePresenter.class);
 			
@@ -104,7 +107,7 @@ public class EntityInsertTaskTest {
 			//set up module with fake task
 			DefaultModule module = new DefaultModule();
 			module.bind(Entity.class, FakeEntity.class);
-			module.bind(GatewayRequest.class, FakeGatewayRequest.class);
+			module.bind(TaskRequest.class, FakeTaskRequest.class);
 			module.bind(Gateway.class, FakeGateway.class);
 			module.bind(OutputBoundary.class, null);
 			
