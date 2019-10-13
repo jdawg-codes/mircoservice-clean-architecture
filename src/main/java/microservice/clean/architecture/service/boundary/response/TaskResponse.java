@@ -1,15 +1,17 @@
-package microservice.clean.architecture.service.boundary;
+package microservice.clean.architecture.service.boundary.response;
 
 import java.util.Map;
 
+import microservice.clean.architecture.service.boundary.element.TaskBoundaryElement;
+
 public abstract class TaskResponse {
-	private Map<String,TaskResponseElement> response;
+	private Map<String,TaskBoundaryElement<?>> response;
 	
-	public void put(String elementName, TaskResponseElement element) {
+	public void put(String elementName, TaskBoundaryElement<?> element) {
 		this.response.put(elementName, element);
 	}
 	
-	public TaskResponseElement get(String elementName) {
+	public TaskBoundaryElement<?> get(String elementName) {
 		return this.response.get(elementName);
 	}
 }

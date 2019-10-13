@@ -1,4 +1,4 @@
-package microservice.clean.architecture.service.entity.attribute.validator;
+package microservice.clean.architecture.error;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,16 +1,18 @@
-package microservice.clean.architecture.service.boundary;
+package microservice.clean.architecture.service.boundary.request;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import microservice.clean.architecture.service.boundary.element.TaskBoundaryElement;
+
 public abstract class TaskRequest {
-	private Map<String,TaskRequestElement<?>> request  = new HashMap<String,TaskRequestElement<?>>();
+	private Map<String,TaskBoundaryElement<?>> request  = new HashMap<String,TaskBoundaryElement<?>>();
 	
-	public void put(String elementName, TaskRequestElement element) {
+	public void put(String elementName, TaskBoundaryElement<?> element) {
 		this.request.put(elementName, element);
 	}
 	
-	public TaskRequestElement get(String elementName) {
+	public TaskBoundaryElement<?> get(String elementName) {
 		return this.request.get(elementName);
 	}
 	

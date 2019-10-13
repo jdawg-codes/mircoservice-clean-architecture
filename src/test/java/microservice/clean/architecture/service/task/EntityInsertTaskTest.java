@@ -1,4 +1,4 @@
-package microservice.clean.architecture.task;
+package microservice.clean.architecture.service.task;
 
 import static org.junit.Assert.*;
 
@@ -9,8 +9,8 @@ import microservice.clean.architecture.fake.FakeEntity;
 import microservice.clean.architecture.fake.FakeGateway;
 import microservice.clean.architecture.fake.FakePresenter;
 import microservice.clean.architecture.fake.FakeTaskRequest;
-import microservice.clean.architecture.service.boundary.OutputBoundary;
-import microservice.clean.architecture.service.boundary.TaskRequest;
+import microservice.clean.architecture.service.boundary.output.OutputBoundary;
+import microservice.clean.architecture.service.boundary.request.TaskRequest;
 import microservice.clean.architecture.service.entity.Entity;
 import microservice.clean.architecture.service.gateway.Gateway;
 import microservice.clean.architecture.service.gateway.GatewayRequest;

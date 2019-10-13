@@ -1,3 +1,5 @@
+package microservice.clean.architecture.service.module;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;

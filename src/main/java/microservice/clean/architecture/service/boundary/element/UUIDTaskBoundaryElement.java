@@ -1,11 +1,11 @@
-package microservice.clean.architecture.service.boundary;
+package microservice.clean.architecture.service.boundary.element;
 
 import java.util.UUID;
 
-public class UUIDTaskRequestElement implements TaskRequestElement<UUID> {
+public class UUIDTaskBoundaryElement implements TaskBoundaryElement<UUID> {
 	private UUID requestElement;
 	
-	public UUIDTaskRequestElement(UUID element) {
+	public UUIDTaskBoundaryElement(UUID element) {
 		this.set(element);
 	}
 	

@@ -1,7 +1,7 @@
 package microservice.clean.architecture.service.entity.attribute;
 
 import microservice.clean.architecture.service.entity.Entity;
-import microservice.clean.architecture.service.entity.attribute.validator.ValidationErrors;
+import microservice.clean.architecture.error.ValidationErrors;
 import microservice.clean.architecture.service.gateway.GatewayRequest;
 
 public class EntityAttribute extends Entity implements Attribute<Entity> {

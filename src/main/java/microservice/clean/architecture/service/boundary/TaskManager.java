@@ -1,6 +1,7 @@
 package microservice.clean.architecture.service.boundary;
 
 import microservice.clean.architecture.exception.NoTaskRequestException;
+import microservice.clean.architecture.service.boundary.output.OutputBoundary;
 import microservice.clean.architecture.service.module.Module;
 import microservice.clean.architecture.service.task.Task;
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;

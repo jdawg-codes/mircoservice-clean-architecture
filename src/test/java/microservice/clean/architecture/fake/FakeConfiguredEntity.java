@@ -3,12 +3,11 @@ package microservice.clean.architecture.fake;
 import java.math.BigDecimal;
 
 import microservice.clean.architecture.service.entity.Entity;
-import microservice.clean.architecture.service.entity.attribute.Attribute;
 import microservice.clean.architecture.service.entity.attribute.EntityAttribute;
 import microservice.clean.architecture.service.entity.attribute.MoneyAttribute;
 import microservice.clean.architecture.service.entity.attribute.PhoneAttribute;
 import microservice.clean.architecture.service.entity.attribute.StringAttribute;
-import microservice.clean.architecture.service.entity.attribute.validator.ValidationErrors;
+import microservice.clean.architecture.error.ValidationErrors;
 import microservice.clean.architecture.service.gateway.GatewayRequest;
 
 public class FakeConfiguredEntity extends Entity {

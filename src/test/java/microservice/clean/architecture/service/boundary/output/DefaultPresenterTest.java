@@ -1,4 +1,4 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary.output;
 
 import static org.junit.Assert.*;
 
@@ -6,11 +6,11 @@ import org.junit.Test;
 
 import microservice.clean.architecture.fake.FakeGatewayResponse;
 import microservice.clean.architecture.fake.FakePresenter;
-import microservice.clean.architecture.service.boundary.OutputBoundary;
-import microservice.clean.architecture.service.boundary.TaskResponse;
+import microservice.clean.architecture.service.boundary.output.OutputBoundary;
+import microservice.clean.architecture.service.boundary.response.TaskResponse;
 import microservice.clean.architecture.service.gateway.GatewayResponse;
 
-public class PresenterTest {
+public class DefaultPresenterTest {
 
 	@Test
 	public void canSetGatewayResponse() {

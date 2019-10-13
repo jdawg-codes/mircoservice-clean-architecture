@@ -1,4 +1,4 @@
-package microservice.clean.architecture.service.entity.attribute.validator;
+package microservice.clean.architecture.error;
 
 import microservice.clean.architecture.error.Error;
 import microservice.clean.architecture.service.entity.attribute.Attribute;

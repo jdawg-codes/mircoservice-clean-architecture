@@ -1,4 +1,4 @@
-package microservice.clean.architecture.entity;
+package microservice.clean.architecture.service.entity;
 
 import static org.junit.Assert.*;
 

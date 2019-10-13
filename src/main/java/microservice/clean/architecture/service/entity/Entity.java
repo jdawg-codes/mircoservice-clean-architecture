@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import microservice.clean.architecture.service.entity.attribute.Attribute;
-import microservice.clean.architecture.service.entity.attribute.validator.ValidationErrors;
+import microservice.clean.architecture.error.ValidationErrors;
 import microservice.clean.architecture.service.gateway.GatewayRequest;
 
 public abstract class Entity {

@@ -1,4 +1,4 @@
-package microservice.clean.architecture.boundary;
+package microservice.clean.architecture.service.boundary;
 
 import static org.junit.Assert.*;
 
@@ -6,12 +6,12 @@ import org.junit.Test;
 
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 import microservice.clean.architecture.fake.FakeTask;
-import microservice.clean.architecture.service.boundary.OutputBoundary;
+import microservice.clean.architecture.service.boundary.output.OutputBoundary;
 import microservice.clean.architecture.service.boundary.TaskManager;
 import microservice.clean.architecture.service.module.DefaultModule;
 import microservice.clean.architecture.service.task.Task;
 
-public class TaskControllerTest {
+public class TaskManagerTest {
 
 	@Test
 	public void controllerThrowsMissingConcreteClassExceptionWithNullRequest() {
