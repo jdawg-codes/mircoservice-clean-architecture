@@ -5,11 +5,11 @@ import microservice.clean.architecture.service.module.Module;
 import microservice.clean.architecture.service.task.Task;
 import microservice.clean.architecture.exception.ModuleMissingConcreteClassException;
 
-public class TaskController {
+public class TaskManager {
 	private Module module;
 	private Task task;
 	
-	public TaskController (Module module) throws NoTaskRequestException, InstantiationException, IllegalAccessException, ModuleMissingConcreteClassException {
+	public TaskManager (Module module) throws NoTaskRequestException, InstantiationException, IllegalAccessException, ModuleMissingConcreteClassException {
 		this.module = module;		
 		task = (Task) this.module.getComponent(Task.class);
 	}
